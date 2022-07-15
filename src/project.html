@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta</title>
+    <link href="../dist/output.css" rel="stylesheet">
+  
+    <style>
+        .caja{
+            border: 1px solid rgb(127, 133, 141)
+            
+        }        
+        
+    </style>
+</head>
+<body>
+    
+
+    <nav class="bg-gray-500 ">
+        <div class="container py-2 mx-auto px-10 flex flex-wrap items-center justify-between rounded-lg">
+            
+            <div  class="flex items-center">
+                <img src="images/logou2.png" class="h-14"> 
+                <h2 class="text-white">Universidad de Córdoba</h2>
+            </div>
+
+
+            <button id="bntResponsive" class="p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white" data-collapse-toggle="mobile-menu" type="button"  aria-controls="mobile-menu" aria-expanded="false">
+                <svg id="iconOpen" class="text-white w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg id="iconClose" class="text-white hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+
+
+            <div class="hidden md:block md:w-auto w-full " id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="#" class="
+                        transition hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 
+                                                            block py-2
+                                                        text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-600 hover:text-gray-200
+                                                          md:border-0 md:mx-2 md:px-3" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                        transition hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 
+                                                            block py-2
+                                                        text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-600 hover:text-gray-200
+                                                          md:border-0 md:mx-2 md:px-3" aria-current="page ">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                        transition hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 
+                                                            block py-2
+                                                        text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-600 hover:text-gray-200
+                                                          md:border-0 md:mx-2 md:px-3" aria-current="page">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                        transition hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 
+                                                            block py-2
+                                                        text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-600 hover:text-gray-200
+                                                          md:border-0 md:mx-2 md:px-3" aria-current="page">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="
+                        transition hover:-translate-y-1 hover:scale-110 hover:bg-gray-500 duration-300 
+                                                            block py-2
+                                                        text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-600 hover:text-gray-200
+                                                          md:border-0 md:mx-2 md:px-3" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            
+            
+        </div>
+    </nav>
+
+
+  
+
+    <div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="Vermodal">
+
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      
+        <div class="fixed z-10 inset-0 overflow-y-auto">
+          <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
+    
+            <div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
+              <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div class="sm:flex sm:items-start">
+                  <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 sm:mx-0 sm:h-10 sm:w-10">
+                  
+
+
+
+                  </div>
+                  <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Datos del proyecto</h3>
+                    <div class="mt-2" id="divtexto" >
+                      <p id="ttexto" class="text-sm text-gray-500"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button id="cancelar" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </dialog>
+    <div class="bg-gray-500 py-5">
+        <div class="bg-white container mx-auto px-5 py-4 rounded-mg">
+            
+           
+
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-5 " >
+
+                <div class="col-span-1">
+                    <div class="shadow-lg p-3 rounded-lg">
+                        
+                        <h1 class="text-center text-3xl">Nuevo proyecto</h1>
+                        <form action="#">
+                            <table>
+                                <tr>
+                                    <td>Código del proyecto</td>
+                                    <td><input class="caja" type="number" name="codigo" id="codigo"></td>
+                                </tr>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>
+                                        <input class="caja" onkeypress="return SoloLetras(event);" type="text" name="nombre" id="nombre">
+                                        <span id="errorNombre"  class="hidden text-xs text-red-600">Datos no válidos en el nombre</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo Proyecto</td>
+                                    <td>
+                                        <select name="tipo" id="tipo" class="caja">
+                                            <option value="">Seleccione el tipo de proyecto...</option>
+                                            <option value="Investigación">Investigación</option>
+                                            <option value="Extensión">Extensión</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha Inicio</td>
+                                    <td><input class="caja" type="date" name="fecha_ini" id="fecha_ini"></td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha Finalización</td>
+                                    <td><input class="caja" type="date" name="fecha_fin" id="fecha_fin"></td>
+                                </tr>
+                                <tr>
+                                    <td>Responsable</td>
+                                    <td><input class="caja" onkeypress="return SoloLetras(event);" type="text" name="responsable" id="responsable"></td>
+                                </tr>
+                                <tr>
+                                    <td>Presupuesto</td>
+                                    <td><input class="caja" type="number" name="presupuesto" id="presupuesto"></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td>Tipo Persona</td>
+                                    <td>
+                                        <label> <input type="radio" id="tipo_persona" name="tipo_persona" value="estudiante">
+                                        Estudiante</label>
+                                        <label> <input type="radio" id="tipo_persona" name="tipo_persona" value="profesor">
+                                        Profesor</label>
+                                    </td>
+                                </tr> -->
+                                <tr>
+                                    <td>Tipo Persona</td>
+                                    <td>
+                                        <select name="tipo_profesor" id="tipo_persona" class="caja">
+                                            <option value="Estudiante">Estudiante</option>
+                                            <option value="Profesor">Profesor</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            
+
+                                <tr>
+                                    <td>Tipo profesor</td>
+                                    <td>
+                                        <select name="tipo_profesor" id="tipo_profesor" class="caja">
+                                            <option value="Planta">Planta</option>
+                                            <option value="Catedratico">Catedratico</option>
+                                            <option value="Ocasional">Ocasional</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                      
+
+                                <tr>
+                                    <td>Semestre Estudiante</td>
+                                    <td>
+                                        <select name="semestre" id="semestre" class="caja">
+                                            <option value="I">I</option>
+                                            <option value="II">II</option>
+                                            <option value="III">III</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                
+
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <input type="button" id="btnAgregar" value="Registrar Proyecto" class="bg-gray-500 p-2 border border-gray-500 rounded-lg" id="accionCU" onclick="agregarProyecto()">
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </form>
+                    </div>                    
+                </div>
+                
+                <div class="col-span-2">
+                    <h1 class="text-center text-3xl">Listado de proyectos</h1>
+                    <table class="min-w-full" id = "listProject">
+                        <thead class="bg-slate-50 border-b border-slate-200">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Nombre
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Responsable
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Fecha Inicio
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Fecha Fin
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Dias de Ejecución
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-sm font-medium text-slate-900">
+                                    Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id ="bodyTable"></tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <footer class="bg-gray-500 text-center text-white py-5 text-sm">
+        <div class="flex justify-center"><img src="images/logou2.png" alt=""></div>
+        <div>Diplomado en desarrollo de aplicaciones orientadas a la nube</div>
+        <div>Universidad de Córdoba</div>
+    </footer>
+    
+    <script>
+        let modal = document.getElementById("Vermodal");
+        let quitarm = document.getElementById("cancelar");
+
+        quitarm.onclick = function(){
+            modal.classList.add("hidden");
+        }
+
+         const data = [];
+        function SoloLetras(e)
+            {
+            key = e.keyCode || e.which;
+            tecla = String.fromCharCode(key).toString();
+            letras = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú";
+
+            especiales = [8,13];
+            tecla_especial = false
+            for(var i in especiales) {
+            if(key == especiales[i]){
+            tecla_especial = true;
+            break;
+            }
+            }
+
+            if(letras.indexOf(tecla) == -1 && !tecla_especial)
+            {
+            alert("Solo se pueden ingresar letras");
+            return false;
+            }
+            }
+ 
+       
+        var spanErrorNombre = document.getElementById('errorNombre');
+     
+        function agregarProyecto() {
+
+            let codigo = document.getElementById("codigo");
+            let nombre = document.getElementById("nombre");
+            let tipo = document.getElementById("tipo");
+            let fecha_ini = document.getElementById("fecha_ini");
+            let fecha_fin = document.getElementById("fecha_fin");
+            let responsable = document.getElementById("responsable");
+            let presupuesto = document.getElementById("presupuesto");
+            let tipo_persona = document.getElementById("tipo_persona");
+            let tipo_profesor = document.getElementById("tipo_profesor");
+            let semestre = document.getElementById("semestre");
+           
+            
+            
+
+            if (fecha_fin.value < fecha_ini.value){
+                alert("Las fechas están incorrectas")
+                fecha_fin.focus();
+                return false;
+            }
+            
+            if (codigo.value == null ||codigo.value == " "){
+                alert("Debe ingresar un codigo");
+                codigo.focus();
+                return false;
+            }else if (nombre.value == null || nombre.value ==""){
+                alert("Debe ingresar un nombre");
+                nombre.focus();
+                return false;
+            }else if (responsable.value == null || responsable.value ==""){
+                alert("Debe ingresar un Responsable");
+                nombre.focus();
+                return false;
+            }else if (fecha_ini.value == null || fecha_ini.value ==""){
+                alert("Debe ingresar una fecha de inicio");
+                fecha_ini.focus();
+                return false;
+            }else if ( fecha_fin.value == null || fecha_fin.value ==""){
+                alert("Debe ingresar una fecha final");
+                fecha_fin.focus();
+                return false;
+            }else if (tipo.value == null || tipo.value ==""){
+                alert ("Debe colocar el tipo de proyecto");
+                tipo.focus();
+                return false;
+            }else if (tipo_persona.value == null || tipo_persona.value ==""){
+                alert ("Debe colocar el tipo de persona");
+                tipo_persona.focus();
+                return false;
+            }else if (tipo_profesor.value == null || tipo_profesor.value =="" ){
+                alert ("Debe colocar el tipo de profesor");
+                tipo_profesor.focus();
+                return false;
+            }else if (parseFloat(presupuesto.value == null || presupuesto.value =="")){
+                alert ("Debe colocar el presupuesto");
+                presupuesto.focus();
+                return false;
+            }else if(semestre.value == null || semestre.value ==""){
+                alert ("Debe colocar el semestre");
+                semestre.focus();
+                return false;
+            }
+
+            let fechaR1 = new Date('1/1/2022');
+            let fechaR2 = new Date('31/12/2022');
+
+            if (fecha_ini.value < fechaR1.getTime() || fecha_ini.value > fechaR2.getTime()){
+                alert("Debe ingresar una fecha de este año en transcurso 2022");
+                return false;
+            }else if(fecha_fin.value < fechaR1.getTime() || fecha_fin.value > fechaR2.getTime()){
+                alert("Debe ingresar una fecha de este año en transcurso 2022");
+                return false;
+            }
+
+         
+
+
+
+           data.push( {
+                "codigo" : codigo.value,
+                "nombre" : nombre.value,
+                "fecha_ini" : new Date(fecha_ini.value),
+                "fecha_fin" : new Date(fecha_fin.value),
+                "responsable" : responsable.value,
+                "tipo" : tipo.value,
+                "tipo_persona": tipo_persona.value,
+                "tipo_profesor": tipo_profesor.value,
+                "presupuesto": parseFloat(presupuesto.value),
+                "semestre": semestre.value,
+    
+           });
+
+            renderInfo(data);
+
+            codigo.value = ""; 
+             nombre.value = "";
+            tipo.value = ""; 
+            fecha_ini.value = ""; 
+            fecha_fin.value = ""; 
+            responsable.value = ""; 
+             presupuesto.value = ""; 
+            
+        
+        }
+        function deleteRows(codigo){
+            var pos=0;
+            var i=0;
+             var opcion = confirm("Estas seguro que deseas eliminar el proyecto con id: "+codigo+"?");
+            if (opcion == true) {
+                for(x of data){
+                    if(x.codigo== codigo){
+                        pos=i;
+                    }
+                    i++
+                }
+
+            data.splice(pos,1);
+            document.getElementById(codigo).remove();
+            console.log(data);
+            }}
+        
+
+        function Mostrar(codigo){
+            var pos=0;
+            var i=0;
+            for(x of data){
+                    if(x.codigo== codigo){
+                        pos=i;
+                    }
+                    i++
+                }
+            let modal = document.getElementById("Vermodal");
+            modal.classList.remove("hidden");
+            var t = innerHTML = "<br>"
+            let texto = document.getElementById("ttexto");
+            texto.innerHTML = 
+            "Codigo del proyecto: " +"<b>"+ codigo +"<b>"
+            +t +"Nombre de proyecto: "+"<b>"+ data[pos].nombre +"<b>"
+            +t +"Tipo Proyecto: "+"<b>"+ data[pos].tipo +"<b>" 
+            +t +"Fecha de inicio: "+"<b>"+ data[pos].fecha_ini +"<b>"
+            +t +"Fecha final: "+"<b>"+ data[pos].fecha_fin +"<b>" 
+            +t +"Responsable: "+"<b>"+ data[pos].responsable +"<b>"  
+            +t +"Presupuesto: "+"<b>"+ data[pos].presupuesto +"<b>" 
+            +t +"Tipo de persona: "+"<b>"+ data[pos].tipo_persona +"<b>" 
+            +t +"Tipo de profesor: "+"<b>"+ data[pos].tipo_profesor +"<b>"
+            +t +"Semestre: "+"<b>"+ data[pos].semestre +"<b>"  
+        }
+
+
+        function renderInfo(data){
+            var bodyTable = document.querySelector("#bodyTable");
+            bodyTable.innerHTML = "";
+            // console.log(data);
+            data.forEach(projecto => {
+                console.log("codigo: ",projecto.codigo)
+                console.log("nombre: ",projecto.nombre)
+                console.log("Tipo Proyecto: ",projecto.tipo)
+                console.log("Fecha inicio: ",projecto.fecha_ini)
+                console.log("Fecha Final: ",projecto.fecha_fin)
+                console.log("Responsable: ",projecto.responsable)
+                console.log("Presupuesto: ",projecto.presupuesto)
+                console.log("Tipo persona:",projecto.tipo_persona)
+                console.log("Tipo profesor: ",projecto.tipo_profesor)
+                console.log("Semestre: ",projecto.semestre)
+                let tr = document.createElement("tr");
+                tr.setAttribute("id", projecto.codigo);
+                let tdNombre = document.createElement("td");
+                tdNombre.textContent = projecto.nombre;
+                tr.appendChild(tdNombre)
+                let tdResponsable = document.createElement("td");
+                tdResponsable.textContent = projecto.responsable;
+                
+                tr.appendChild(tdResponsable)
+
+                let tdfecha_ini = document.createElement("td");
+                tdfecha_ini.textContent = projecto.fecha_ini;
+                tr.appendChild(tdfecha_ini)
+
+                let tdfecha_fin = document.createElement("td");
+                tdfecha_fin.textContent = projecto.fecha_fin;
+                tr.appendChild(tdfecha_fin)
+
+                let tdDiasEjecucion = document.createElement("td");
+                let diff= Math.abs(projecto.fecha_fin - projecto.fecha_ini);
+                let dias = diff/(1000 * 3600 * 24);
+                tdDiasEjecucion.textContent = dias;
+                tr.appendChild(tdDiasEjecucion)
+
+                let tdAcciones = document.createElement("td");
+                let editar = document.createElement("input");
+                let eliminar = document.createElement("input")
+                let vistar = document.createElement("input")
+                editar.setAttribute('value',"Editar");
+                editar.setAttribute('type',"button");
+                editar.setAttribute('class',"bg-green-600 text-green-200 text-sm p-1 border border-green-800");
+                tdAcciones.appendChild(editar);
+                eliminar.setAttribute('value',"Eliminar");
+                eliminar.setAttribute('type',"button");
+                eliminar.setAttribute('class',"bg-red-600 text-red-200 text-sm p-1 border border-red-800");
+                eliminar.setAttribute('Onclick', "deleteRows("+projecto.codigo+")");
+                tdAcciones.appendChild(eliminar);
+                vistar.setAttribute('value',"Vista Rápida");
+                vistar.setAttribute('type',"button");
+                vistar.setAttribute('id','vistarProyecto')
+                vistar.setAttribute('class',"bg-yellow-600 text-yellow-200 text-sm p-1 border border-yellow-800");
+                vistar.setAttribute('Onclick', "Mostrar("+projecto.codigo+")");
+                tdAcciones.appendChild(vistar);
+                
+
+
+                tr.appendChild(tdAcciones)
+               
+                
+                bodyTable.append(tr)
+                
+
+                
+            
+            });
+
+
+
+           
+ 
+    </script>
+
+
+  
+</body>
+
+
+</html>
